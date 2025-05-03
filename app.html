@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Face-Recognition Drop Box</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.15/dist/face-api.js"></script>
+
+
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="card shadow">
+    <h1 class="title">Your Place Is Safe Now </h1>
+
+    <div id="drop-zone" class="drop-zone shadow--inset">
+      <span class="helper-text">Drag &amp; drop an image here<br>or open the camera for live Recognition</span>
+      <input type="file" id="file-input" accept="image/*" hidden />
+    </div>
+
+    <p id="status">Loading models…</p>
+  </div>
+</body>
+</html>
